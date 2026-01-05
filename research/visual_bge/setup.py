@@ -8,6 +8,13 @@ setup(
     long_description_content_type="text/markdown",
     url='https://github.com/FlagOpen/FlagEmbedding/tree/master/research/visual_bge',
     packages=find_packages(),
+    package_data={
+        'visual_bge': [
+            'eva_clip/*.txt.gz',
+            'eva_clip/model_configs/*.json',
+        ],
+    },
+    include_package_data=True,
     install_requires=[
         'torchvision',
         'timm',

@@ -1,0 +1,14 @@
+# Include data files
+include README.md
+include requirements.txt
+
+# Include all data files in eva_clip
+recursive-include visual_bge/eva_clip *.txt.gz
+recursive-include visual_bge/eva_clip/model_configs *.json
+
+# Exclude compiled files
+global-exclude *.pyc
+global-exclude *.pyo
+global-exclude __pycache__
+global-exclude *.so
+global-exclude *.dylib
